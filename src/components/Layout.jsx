@@ -9,10 +9,10 @@ function Layout() {
             <header id="header"></header>
             <nav id="nav-bar">
                 <ul id="nav-menu">
-                    <li id="home-btn" className="nav-btn"><NavLink to="/" className={currentClass}><i className="material-icons">home</i>Home</NavLink></li>
-                    <li id="about-btn" className="nav-btn"><NavLink to="/about" className={currentClass}><i className="material-icons">account_box</i>About</NavLink></li>
-                    <li id="gallery-btn" className="nav-btn"><NavLink to="/gallery" className={currentClass}><i className="material-icons">palette</i>Gallery</NavLink></li>
-                    <li id="contact-btn" className="nav-btn"><NavLink to="/contact" className={currentClass}><i className="material-icons">email</i>Contact</NavLink></li>
+                    <li id="home-btn" className="nav-btn"><NavLink to="/kartoon-fool-react/" end className={currentClass}><i className="material-icons">home</i>Home</NavLink></li>
+                    <li id="about-btn" className="nav-btn"><NavLink to="/kartoon-fool-react/about" className={currentClass}><i className="material-icons">account_box</i>About</NavLink></li>
+                    <li id="gallery-btn" className="nav-btn"><NavLink to="/kartoon-fool-react/gallery" className={currentClass}><i className="material-icons">palette</i>Gallery</NavLink></li>
+                    <li id="contact-btn" className="nav-btn"><NavLink to="/kartoon-fool-react/contact" className={currentClass}><i className="material-icons">email</i>Contact</NavLink></li>
                 </ul>
                 <div id="social-links">
                     <a href="https://www.deviantart.com/cartoonfool" target="_blank"><div id="deviantart" className="radial-btn"></div></a>

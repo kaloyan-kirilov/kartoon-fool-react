@@ -8,11 +8,11 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/kartoon-fool-react/" element={<Layout />}>
       <Route index element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/gallery" element={<Gallery />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/kartoon-fool-react/about" element={<About />} />
+      <Route path="/kartoon-fool-react/gallery" element={<Gallery />} />
+      <Route path="/kartoon-fool-react/contact" element={<Contact />} />
     </Route>
   )
 );
