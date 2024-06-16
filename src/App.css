@@ -1,0 +1,960 @@
+@font-face {
+    font-family: 'Ranchers-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Ranchers-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Peralta-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Peralta-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'MuseoModerno-Medium';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/MuseoModerno-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'BreeSerif-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/BreeSerif-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/MaterialIcons-Regular.woff2') format('woff2');
+}
+
+/* --- Global --- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --container-shadow:
+    0.5rem 0 0.4rem -0.4rem rgba(0, 0, 0, 0.25),
+    -0.5rem 0 0.4rem -0.4rem rgba(0, 0, 0, 0.25);
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: #9b9274;
+    background-image: url('./img/bg-stripes.png');
+    background-size: 15rem 15rem;
+    background-repeat: repeat;
+    user-select: none;
+}
+
+/* --- Main Container --- */
+#main-container {
+    width: 51.2rem;
+    min-height: 100vh;
+    background: linear-gradient(#d1d4c1, #c2c4b3);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+
+    box-shadow: var(--container-shadow);
+    -moz-box-shadow: var(--container-shadow);
+    -webkit-box-shadow: var(--container-shadow);
+}
+
+/* --- Header --- */
+#header {
+    width: 100%;
+    height: 20rem;
+    background: #ffffff url('./img/header-img.png') center/contain no-repeat;
+}
+
+/* --- Navigation Bar --- */
+#nav-bar {
+    width: 100%;
+    height: 3.25rem;
+    background: linear-gradient(#ffe570, #ffc662);
+    border-bottom: 4px solid hsl(27, 46%, 45%);
+    position: relative;
+}
+
+#nav-menu {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    list-style: none;
+    font-family: "Ranchers-Regular";
+    font-size: 1.4rem;
+    margin-left: 1.25rem;
+    border-left: 3px #eaa63a solid;
+    border-right: 3px #eaa63a solid;   
+}
+
+#home-btn,
+#about-btn,
+#gallery-btn {
+    border-right: 3px #eaa63a solid;
+}
+
+.nav-btn {
+    width: 7.5rem;
+}
+
+.material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.65rem;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+
+    padding-right: 1px;
+}
+
+#nav-menu a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3c426e;
+    text-decoration: none;
+    padding-right: 0.25rem;
+}
+
+#nav-menu a:hover,
+#nav-menu a.current {
+    color: #c73c40;
+    background: linear-gradient(#9aeaf0, #7eccf0);
+}
+
+#nav-menu a.current {
+    pointer-events: none;
+}
+
+#social-links {
+    display: flex;
+    position: absolute;
+    right: 1.25rem;
+    top: 0.55rem;
+}
+
+.radial-btn {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+#deviantart {
+    background: #475c4d url('./img/deviantart.svg') center/contain no-repeat;  
+    margin-right: 0.25rem;
+}
+
+#deviantart:hover {
+    background-color: #06070d;
+}
+
+#twitter {
+    background: #1cb7eb url('./img/twitter.svg') center/contain no-repeat;
+    margin-left: 0.25rem;
+}
+
+#twitter:hover {
+    background-image: url('./img/twitter-hover.svg');
+    background-color: #1f364d;
+}
+
+/* --- Page Classes --- */
+#page-content {
+    padding: 1.5rem 0;
+    flex-grow: 1;
+    background: linear-gradient(#d1d4c1, #c2c4b3);
+}
+
+#content-container {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fdf3e3 url('./img/content-texture.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 1.25rem;
+    border: 2px dashed #42434b;
+    padding: 1.75rem 0;
+    margin: auto;
+}
+
+.page-title {    
+    margin-bottom: 0.75rem;
+}
+
+.title-text {  
+    color:#aa3b6d;
+    font-family: "Peralta-Regular";
+    font-size: 1.4rem;
+    transform: scale(1, 1.2);
+}
+
+.page-text {
+    color: #1a945d;
+    font-family: "Peralta-Regular";
+    font-size: 1rem;
+    transform: scale(1, 1.2);
+}
+
+/* --- Home Page --- */
+#home-image {
+    width: 80%;
+    margin: 0.5rem 0 1rem 0;
+}
+
+/* --- About Page --- */
+#about-text {
+    width: 80%; 
+    text-align: justify;
+    margin: 2.75rem 0 3.5rem 0 ;
+}
+
+#welcome-message {
+    display: block;
+    color: #34509e;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* --- Gallery Page --- */
+#gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 0.75rem;
+    position: relative;
+}
+
+.thumbnail {
+    height: 11.5rem;
+    width: 9rem;
+    background-color: white;
+    border: 2px solid #bcb4a1;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.thumbnail:hover {
+    border-color: #aa3b6d;
+    cursor: pointer;
+}
+
+.thumbnail:hover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    position: absolute;
+}
+
+.empty-thumb:hover {
+    border-color: #08c561;
+    background-image: url('./img/gallery/thumb/empty-thumb-hover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page-navigation {
+    height: 3rem;
+    width: 22.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    grid-column: span 4;
+}
+
+#mobile-nav {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-column: span 2;
+}
+
+#prev-button, #prev-button-m {
+    background-image: url('./img/button-prev.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+#prev-button:hover, #prev-button-m:hover {
+    background-image: url('./img/button-prev-hover.png');
+}
+
+#next-button, #next-button-m {
+    background-image: url('./img/button-next.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+#next-button:hover, #next-button-m:hover {
+    background-image: url('./img/button-next-hover.png');
+}
+
+.arrow-btn {
+    height: 1.15rem;
+    width: 2rem;
+    text-decoration: none;
+}
+
+.hide-button {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.page-btn {
+    height: 2.25rem;
+    width: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Peralta-Regular";
+    color:#aa3b6d;
+    font-size: 1.35rem;
+    transform: scale(1, 1.2);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.current-page,
+.page-btn:hover {
+    color: #34509e;
+    background-image: url('./img/page-select.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* --- Gallery Modal --- */
+#gallery-modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#modal-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#modal-image {
+    width: 90%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#modal-top, #modal-nav {  
+    height: 3.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+#modal-top {
+    width: 100%;
+    padding: 0.55rem;
+    background-color: transparent;
+}
+
+#modal-nav {
+    width: 27rem;
+    background-color: #d1d4c1;
+    margin: 1rem;
+}
+
+.modal-arrow {
+    height: 100%;
+    width: 2.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 1rem;
+}
+
+#prev-modal {
+    background-image: url('./img/button-prev.png');
+}
+
+#prev-modal:hover {
+    background-image: url('./img/button-prev-hover.png');
+    cursor: pointer;
+}
+
+#next-modal {
+    background-image: url('./img/button-next.png');
+}
+
+#next-modal:hover {
+    background-image: url('./img/button-next-hover.png');
+    cursor: pointer;
+}
+
+#title-nav, #title-top, #modal-index {
+    background-color: white;
+    padding: 0.15rem 0.65rem;
+    border-radius: 3px;
+    font-family: "Peralta-Regular";
+    color:#aa3b6d;
+    font-size: 1.55rem;
+    transform: scale(1, 1.2);
+}
+
+#title-top {
+    opacity: 0;
+}
+
+#modal-index {
+    display: none;
+}
+
+#close-button {
+    width: 2.75rem;
+    height: 2.75rem;
+    background-image: url('./img/close-button.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#close-button:hover {
+    background-image: url('./img/close-button-hover.png');
+    cursor: pointer;
+}
+
+/* --- Contact Page --- */
+#contact-text {
+    width: 80%;
+    text-align: center;
+    margin-top: 0.85rem;
+}
+
+#email {
+    color: #bf4349;
+}
+
+#contact-form {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-family: "Peralta-Regular";
+    font-size: 1rem;
+    color: #34509e;
+    transform: scale(1, 1.2);
+    margin-bottom: 0.3rem;
+}
+
+input, textarea {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    border: 2px solid #bcb4a1;
+    padding: 0.5rem;
+    outline: none;
+}
+
+textarea {
+    height: 15rem;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #aa3b6d;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color: transparent;
+}
+
+.column-span {
+    grid-column: span 2;
+}
+
+#contact-send {
+    height: 2.75rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+#send-btn {
+    height: inherit;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Ranchers-Regular";
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    color: #3c426e;
+    background: linear-gradient(#ffe570, #ffc662);
+    border: 2px solid #eaa63a;
+    border-radius: 0.5rem;
+    padding-left: 0.25rem;
+    padding-bottom: 0.1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+#double-arrow {
+    padding-top: 0.15rem;
+}
+
+#send-btn:hover {
+    color: #c73c40;
+    background: linear-gradient(#9aeaf0, #7eccf0);
+    border: 2px solid #08c561;
+}
+
+#message-alert {
+    font-family: "Peralta-Regular";
+    font-size: inherit;
+    color: #1a945d;
+    transform: scale(1, 1.2);
+}
+
+/* --- Footer --- */
+#footer {
+    height: 3.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#2f323d, #202229);
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 0.3px;
+}
+
+#copyright {
+    padding-right: 0.1rem;
+}
+
+#kartoon-fool {
+    font-family: "BreeSerif-Regular";
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transform: scale(1, 0.95);
+    margin-right: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+#web-dev {
+    font-family: "MuseoModerno-Medium";
+    font-size: 0.85rem;
+}
+
+#kaloyan-kirilov {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#kaloyan-kirilov:hover {
+    color: rgb(250, 229, 136);
+    text-decoration: underline rgb(196, 69, 54);
+}
+
+/* --- Media Queries --- */
+@media screen and (max-width: 1400px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #main-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #header {
+        height: 39vw;
+    }
+
+    #gallery {
+        gap: 1.45vw;
+    }
+
+    .thumbnail {
+        width: 17.6vw;
+        height: 22.5vw;
+    }
+
+    #contact-text {
+        width: 85%;
+    }
+
+    #contact-form {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    html {
+        font-size: 3.3vw;
+    }
+
+    #header {
+        height: 45vw;
+    }
+
+    #nav-bar {
+        height: 10vw;
+        border-bottom: 3px solid #a86e3e;
+    }
+
+    #social-links {
+        top: -9.3vw;
+        right: 2vw;
+    }
+
+    .radial-btn {
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+
+    #nav-menu {
+        width: 100%;
+        margin-left: unset;
+        border-left: unset;
+        border-right: unset;
+    }
+
+    .nav-btn {
+        width: 100%;
+    }
+
+    .material-icons {
+        padding-right: unset;
+    }
+
+    #home-btn, #about-btn, #gallery-btn {
+        border-right: 2px #eaa63a solid;
+    }
+
+    #content-container {
+        padding: 5vw 0;
+        border: 0.5vw dashed #42434b;
+    }
+
+    #about-text {
+        width: 87%;
+        margin: 10.5vw 0 13vw 0;
+    }
+
+    #gallery {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        gap: 2.5vw;
+    }
+
+    .thumbnail {
+        width: 36vw;
+        height: 46vw;
+    }
+
+    #page-navigation {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+        margin: 2vw 0;
+    }
+
+    .page-btn {
+        width: 9vw;
+        height: 9vw;
+        font-size: 5.5vw;
+    }
+
+    .arrow-btn {
+        width: 8vw;
+        height: 6vw;
+    }
+
+    .current-page {
+        color: #aa3b6d;
+        pointer-events: none;
+    }
+
+    #modal-container {
+        height: 150vw;
+        max-height: 95vh;
+    }
+
+    #modal-top, #modal-nav {
+        width: 80%;
+        border-radius: 1vw;
+        margin: unset;
+    }
+
+    #modal-top {
+        background-color: #d1d4c1;
+    }
+
+    #title-top {
+        opacity: 1;
+    }
+
+    #modal-image {
+        margin: 3vw 0;
+    }
+
+    #title-nav {
+        display: none;
+    }
+
+    #modal-index {
+        display: block;
+    }
+
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, textarea {
+        border: 0.5vw solid #bcb4a1;
+    }
+
+    input:focus, textarea:focus {
+        border: 0.5vw solid #aa3b6d;
+    }
+
+    #contact-send {
+        height: 9.75vw;
+    }
+
+    #send-btn {
+        width: 24vw;
+    }
+
+    #footer {
+        height: 14vw;
+        flex-direction: column;
+    }
+
+    #kartoon-fool {
+        padding: unset;
+        margin: unset;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    #modal-container {
+        position: relative;
+    }
+
+    #modal-image {
+        height: 100%;
+        margin: 10px 0;
+    }
+
+    #modal-nav {
+        width: 100vw;
+        background-color: unset;
+        margin: unset;
+        position: fixed;
+    }
+
+    #title-nav {
+        display: none;
+    }
+
+    #modal-index {
+        display: none;
+    }
+
+    #prev-modal, #next-modal {
+        height: 4.5rem;
+        width: 5rem;
+        background-color: #d1d4c1;
+        background-size: 3.5rem;
+        border-radius: 5px;
+        margin: 1rem;
+    }
+
+    #modal-top {
+        width: 100%;
+        height: fit-content;
+        background-color: unset;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #title-top {
+        opacity: 0;
+    }
+
+    #close-button {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+/* Preload Images */
+#main-container::after {
+    content: "";
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    background:
+    /* Buttons */
+    url('./img/page-select.png'),
+    url('./img/button-prev.png'),
+    url('./img/button-prev-hover.png'),
+    url('./img/button-next.png'),
+    url('./img/button-next-hover.png'),
+    url('./img/close-button.png'),
+    url('./img/close-button-hover.png'),
+    url('./img/twitter-hover.svg'),
+
+    /* Thumbnails */
+    url('./img/gallery/thumb/43_goat-thumb.jpg'),
+    url('./img/gallery/thumb/42_diamond-thumb.jpg'),
+    url('./img/gallery/thumb/41_corona-thumb.jpg'),
+    url('./img/gallery/thumb/40_grinch-thumb.jpg'),
+    url('./img/gallery/thumb/39_rabbit-thumb.jpg'),
+    url('./img/gallery/thumb/38_walk-thumb.jpg'),
+    url('./img/gallery/thumb/37_kaiju-thumb.jpg'),
+    url('./img/gallery/thumb/36_silhouette-thumb.jpg'),
+    url('./img/gallery/thumb/35_rick-thumb.jpg'),
+    url('./img/gallery/thumb/34_kodi-thumb.jpg'),
+    url('./img/gallery/thumb/33_snail-thumb.jpg'),
+    url('./img/gallery/thumb/32_screwball-thumb.jpg'),
+    url('./img/gallery/thumb/31_scientist-thumb.jpg'),
+    url('./img/gallery/thumb/30_sheep-thumb.jpg'),
+    url('./img/gallery/thumb/29_rooster-thumb.jpg'),
+    url('./img/gallery/thumb/28_kooky-thumb.jpg'),
+    url('./img/gallery/thumb/27_toot-thumb.jpg'),
+    url('./img/gallery/thumb/26_hanna-thumb.jpg'),
+    url('./img/gallery/thumb/25_ed-thumb.jpg'),
+    url('./img/gallery/thumb/24_spidey-thumb.jpg'),
+    url('./img/gallery/thumb/23_nutty-thumb.jpg'),
+    url('./img/gallery/thumb/22_snowflake-thumb.jpg'),
+    url('./img/gallery/thumb/21_trick-thumb.jpg'),
+    url('./img/gallery/thumb/20_sheriff-thumb.jpg'),
+    url('./img/gallery/thumb/19_wolf-thumb.jpg'),
+    url('./img/gallery/thumb/18_grylls-thumb.jpg'),
+    url('./img/gallery/thumb/17_beaver-thumb.jpg'),
+    url('./img/gallery/thumb/16_selfish-thumb.jpg'),
+    url('./img/gallery/thumb/15_lazy-thumb.jpg'),
+    url('./img/gallery/thumb/14_wacky-thumb.jpg'),
+    url('./img/gallery/thumb/13_fred-thumb.jpg'),
+    url('./img/gallery/thumb/12_dila-thumb.jpg'),
+    url('./img/gallery/thumb/11_carrot-thumb.jpg'),
+    url('./img/gallery/thumb/10_forest-thumb.jpg'),
+    url('./img/gallery/thumb/09_raccoon-thumb.jpg'),
+    url('./img/gallery/thumb/08_lion-thumb.jpg'),
+    url('./img/gallery/thumb/07_genius-thumb.jpg'),
+    url('./img/gallery/thumb/06_fox-thumb.jpg'),
+    url('./img/gallery/thumb/05_frog-thumb.jpg'),
+    url('./img/gallery/thumb/04_fishing-thumb.jpg'),
+    url('./img/gallery/thumb/03_walrus-thumb.jpg'),
+    url('./img/gallery/thumb/02_radioactive-thumb.jpg'),
+    url('./img/gallery/thumb/01_duck-thumb.jpg'),
+    url('./img/gallery/thumb/empty-thumb-hover.jpg'),
+
+    /* Modal Images */
+    url('./img/gallery/full/43_goat-full.jpg'),
+    url('./img/gallery/full/42_diamond-full.jpg'),
+    url('./img/gallery/full/41_corona-full.jpg'),
+    url('./img/gallery/full/40_grinch-full.jpg'),
+    url('./img/gallery/full/39_rabbit-full.jpg'),
+    url('./img/gallery/full/38_walk-full.gif'),
+    url('./img/gallery/full/37_kaiju-full.jpg'),
+    url('./img/gallery/full/36_silhouette-full.jpg'),
+    url('./img/gallery/full/35_rick-full.jpg'),
+    url('./img/gallery/full/34_kodi-full.jpg'),
+    url('./img/gallery/full/33_snail-full.jpg'),
+    url('./img/gallery/full/32_screwball-full.jpg'),
+    url('./img/gallery/full/31_scientist-full.jpg'),
+    url('./img/gallery/full/30_sheep-full.jpg'),
+    url('./img/gallery/full/29_rooster-full.jpg'),
+    url('./img/gallery/full/28_kooky-full.jpg'),
+    url('./img/gallery/full/27_toot-full.jpg'),
+    url('./img/gallery/full/26_hanna-full.jpg'),
+    url('./img/gallery/full/25_ed-full.jpg'),
+    url('./img/gallery/full/24_spidey-full.jpg'),
+    url('./img/gallery/full/23_nutty-full.jpg'),
+    url('./img/gallery/full/22_snowflake-full.jpg'),
+    url('./img/gallery/full/21_trick-full.jpg'),
+    url('./img/gallery/full/20_sheriff-full.jpg'),
+    url('./img/gallery/full/19_wolf-full.jpg'),
+    url('./img/gallery/full/18_grylls-full.jpg'),
+    url('./img/gallery/full/17_beaver-full.jpg'),
+    url('./img/gallery/full/16_selfish-full.jpg'),
+    url('./img/gallery/full/15_lazy-full.jpg'),
+    url('./img/gallery/full/14_wacky-full.jpg'),
+    url('./img/gallery/full/13_fred-full.jpg'),
+    url('./img/gallery/full/12_dila-full.jpg'),
+    url('./img/gallery/full/11_carrot-full.jpg'),
+    url('./img/gallery/full/10_forest-full.jpg'),
+    url('./img/gallery/full/09_raccoon-full.jpg'),
+    url('./img/gallery/full/08_lion-full.jpg'),
+    url('./img/gallery/full/07_genius-full.jpg'),
+    url('./img/gallery/full/06_fox-full.jpg'),
+    url('./img/gallery/full/05_frog-full.jpg'),
+    url('./img/gallery/full/04_fishing-full.jpg'),
+    url('./img/gallery/full/03_walrus-full.jpg'),
+    url('./img/gallery/full/02_radioactive-full.jpg'),
+    url('./img/gallery/full/01_duck-full.jpg');
+}
