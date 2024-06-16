@@ -1,5 +1,8 @@
-const thumb_url = "url('../src/img/gallery/thumb/";
-const image_url = "url('../src/img/gallery/full/";
+// const thumb_url = "url('../src/img/gallery/thumb/";
+// const image_url = "url('../src/img/gallery/full/";
+
+const thumb_url = "url('/kartoon-fool-react/assets/";
+const image_url = "url('/kartoon-fool-react/assets/";
 
 const gallery = {
     image_01: {
