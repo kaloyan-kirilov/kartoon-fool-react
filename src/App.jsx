@@ -24,7 +24,11 @@ function App() {
   const [isLoading, setIsLoading] = useState(loading);
 
   useEffect(() => {
-    setIsLoading(false);
+    const load = () => {
+      setTimeout(() => {setIsLoading(false)}, 3000);
+    }
+
+    load();
   }, []);
 
   return isLoading ? "" : <RouterProvider router={router} />
