@@ -70,7 +70,7 @@ function Gallery() {
         let thumbnail = thumb;
 
         if (thumbnail != null) {
-            thumbnail = `url('/kartoon-fool-react/assets/${thumb})`;
+            thumbnail = `url('/kartoon-fool-react/assets/${thumb}`;
         }
 
         return thumbnail;
@@ -82,7 +82,7 @@ function Gallery() {
         });        
 
         const title = name;
-        const image = `url('/kartoon-fool-react/assets/${img})`;
+        const image = `url('/kartoon-fool-react/assets/${img}`;
 
         setIndex(index);
         setTitle(title);
