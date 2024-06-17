@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import Layout from "./components/Layout.jsx";
 import Home from "./components/pages/Home.jsx";
 import About from "./components/pages/About.jsx";
