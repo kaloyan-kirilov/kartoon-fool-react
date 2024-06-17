@@ -18,9 +18,7 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  document.addEventListener("DOMContentLoaded", () => {
-    return <RouterProvider router={router} />
-  });
+  return <RouterProvider router={router} />
 }
 
 export default App;
