@@ -645,7 +645,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 @media screen and (max-width: 615px) {
     html {
-        font-size: 3vw;
+        font-size: 3.3vw;
     }
 
     #header {
@@ -692,7 +692,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     }
 
     #about-text {
-        width: 70vw;
+        width: 69vw;
         margin: 10.5vw 0 13vw 0;
     }
 
