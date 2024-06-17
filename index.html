@@ -14,11 +14,15 @@
     <link rel="preload" as="image" href="src/img/bg-stripes.png">
     <link rel="preload" as="image" href="src/img/deviantart.svg">
     <link rel="preload" as="image" href="src/img/twitter.svg">
-    <link rel="preload" as="style" href="src/App.css">
     <title>Kartoon Fool</title>
   </head>
   <body>
-    <div id="main-container"></div>
+    <div id="main-container" style="visibility: hidden;"></div>
     <script type="module" src="src/main.jsx"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", (e) => {
+        document.getElementById("main-container").style.visibility = "visible";
+      });
+    </script>
   </body>
 </html>
