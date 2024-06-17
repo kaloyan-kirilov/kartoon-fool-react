@@ -788,6 +788,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     #footer {
         height: 14vw;
         flex-direction: column;
+        padding-bottom: 1vw;
     }
 
     #kartoon-fool {
