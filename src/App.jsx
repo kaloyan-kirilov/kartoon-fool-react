@@ -5,6 +5,9 @@ import About from "./components/pages/About.jsx";
 import Gallery from "./components/pages/Gallery.jsx";
 import Contact from "./components/pages/Contact.jsx";
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+const loading = true;
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,7 +21,13 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  return <RouterProvider router={router} />
+  const [isLoading, setIsLoading] = useState(loading);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
+  return isLoading ? "" : <RouterProvider router={router} />
 }
 
 export default App;
