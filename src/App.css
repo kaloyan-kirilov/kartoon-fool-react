@@ -692,7 +692,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     }
 
     #about-text {
-        width: 87%;
+        width: 74vw;
         margin: 10.5vw 0 13vw 0;
     }
 
@@ -705,6 +705,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     .thumbnail {
         width: 36vw;
         height: 46vw;
+        border-radius: 1.25vw;
     }
 
     #page-navigation {
