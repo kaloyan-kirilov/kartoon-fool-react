@@ -2,35 +2,35 @@
     font-family: 'Ranchers-Regular';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/Ranchers-Regular.woff2') format('woff2');
+    src: url('./fonts/Ranchers-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Peralta-Regular';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/Peralta-Regular.woff2') format('woff2');
+    src: url('./fonts/Peralta-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'MuseoModerno-Medium';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/MuseoModerno-Medium.woff2') format('woff2');
+    src: url('./fonts/MuseoModerno-Medium.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'BreeSerif-Regular';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/BreeSerif-Regular.woff2') format('woff2');
+    src: url('./fonts/BreeSerif-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/MaterialIcons-Regular.woff2') format('woff2');
+    src: url('./fonts/MaterialIcons-Regular.woff2') format('woff2');
 }
 
 /* --- Global --- */
@@ -52,7 +52,7 @@ html {
 
 body {
     background-color: #9b9274;
-    background-image: url('../img/bg-stripes.png');
+    background-image: url('./img/bg-stripes.png');
     background-size: 15rem 15rem;
     background-repeat: repeat;
     user-select: none;
@@ -77,7 +77,7 @@ body {
 #header {
     width: 100%;
     height: 20rem;
-    background: #ffffff url('../img/header-img.png') center/contain no-repeat;
+    background: #ffffff url('./img/header-img.png') center/contain no-repeat;
 }
 
 /* --- Navigation Bar --- */
@@ -167,7 +167,7 @@ body {
 }
 
 #deviantart {
-    background: #475c4d url('../img/deviantart.svg') center/contain no-repeat;  
+    background: #475c4d url('./img/deviantart.svg') center/contain no-repeat;  
     margin-right: 0.25rem;
 }
 
@@ -176,12 +176,12 @@ body {
 }
 
 #twitter {
-    background: #1cb7eb url('../img/twitter.svg') center/contain no-repeat;
+    background: #1cb7eb url('./img/twitter.svg') center/contain no-repeat;
     margin-left: 0.25rem;
 }
 
 #twitter:hover {
-    background-image: url('../img/twitter-hover.svg');
+    background-image: url('./img/twitter-hover.svg');
     background-color: #1f364d;
 }
 
@@ -197,7 +197,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #fdf3e3 url('../img/content-texture.jpg') no-repeat;
+    background: #fdf3e3 url('./img/content-texture.jpg') no-repeat;
     background-size: cover;
     border-radius: 1.25rem;
     border: 2px dashed #42434b;
@@ -278,7 +278,7 @@ body {
 
 .empty-thumb:hover {
     border-color: #08c561;
-    background-image: url('../img/gallery/thumb/empty-thumb-hover.jpg');
+    background-image: url('./img/gallery/thumb/empty-thumb-hover.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -302,7 +302,7 @@ body {
 }
 
 #prev-button, #prev-button-m {
-    background-image: url('../img/button-prev.png');
+    background-image: url('./img/button-prev.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -310,11 +310,11 @@ body {
 }
 
 #prev-button:hover, #prev-button-m:hover {
-    background-image: url('../img/button-prev-hover.png');
+    background-image: url('./img/button-prev-hover.png');
 }
 
 #next-button, #next-button-m {
-    background-image: url('../img/button-next.png');
+    background-image: url('./img/button-next.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -322,7 +322,7 @@ body {
 }
 
 #next-button:hover, #next-button-m:hover {
-    background-image: url('../img/button-next-hover.png');
+    background-image: url('./img/button-next-hover.png');
 }
 
 .arrow-btn {
@@ -353,7 +353,7 @@ body {
 .current-page,
 .page-btn:hover {
     color: #34509e;
-    background-image: url('../img/page-select.png');
+    background-image: url('./img/page-select.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -419,20 +419,20 @@ body {
 }
 
 #prev-modal {
-    background-image: url('../img/button-prev.png');
+    background-image: url('./img/button-prev.png');
 }
 
 #prev-modal:hover {
-    background-image: url('../img/button-prev-hover.png');
+    background-image: url('./img/button-prev-hover.png');
     cursor: pointer;
 }
 
 #next-modal {
-    background-image: url('../img/button-next.png');
+    background-image: url('./img/button-next.png');
 }
 
 #next-modal:hover {
-    background-image: url('../img/button-next-hover.png');
+    background-image: url('./img/button-next-hover.png');
     cursor: pointer;
 }
 
@@ -457,14 +457,14 @@ body {
 #close-button {
     width: 2.75rem;
     height: 2.75rem;
-    background-image: url('../img/close-button.png');
+    background-image: url('./img/close-button.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 #close-button:hover {
-    background-image: url('../img/close-button-hover.png');
+    background-image: url('./img/close-button-hover.png');
     cursor: pointer;
 }
 
@@ -858,103 +858,103 @@ input:focus::placeholder, textarea:focus::placeholder {
     opacity: 0;
     background:
     /* Buttons */
-    url('../img/page-select.png'),
-    url('../img/button-prev.png'),
-    url('../img/button-prev-hover.png'),
-    url('../img/button-next.png'),
-    url('../img/button-next-hover.png'),
-    url('../img/close-button.png'),
-    url('../img/close-button-hover.png'),
-    url('../img/twitter-hover.svg'),
+    url('./img/page-select.png'),
+    url('./img/button-prev.png'),
+    url('./img/button-prev-hover.png'),
+    url('./img/button-next.png'),
+    url('./img/button-next-hover.png'),
+    url('./img/close-button.png'),
+    url('./img/close-button-hover.png'),
+    url('./img/twitter-hover.svg'),
 
     /* Thumbnails */
-    url('../img/gallery/thumb/43_goat-thumb.jpg'),
-    url('../img/gallery/thumb/42_diamond-thumb.jpg'),
-    url('../img/gallery/thumb/41_corona-thumb.jpg'),
-    url('../img/gallery/thumb/40_grinch-thumb.jpg'),
-    url('../img/gallery/thumb/39_rabbit-thumb.jpg'),
-    url('../img/gallery/thumb/38_walk-thumb.jpg'),
-    url('../img/gallery/thumb/37_kaiju-thumb.jpg'),
-    url('../img/gallery/thumb/36_silhouette-thumb.jpg'),
-    url('../img/gallery/thumb/35_rick-thumb.jpg'),
-    url('../img/gallery/thumb/34_kodi-thumb.jpg'),
-    url('../img/gallery/thumb/33_snail-thumb.jpg'),
-    url('../img/gallery/thumb/32_screwball-thumb.jpg'),
-    url('../img/gallery/thumb/31_scientist-thumb.jpg'),
-    url('../img/gallery/thumb/30_sheep-thumb.jpg'),
-    url('../img/gallery/thumb/29_rooster-thumb.jpg'),
-    url('../img/gallery/thumb/28_kooky-thumb.jpg'),
-    url('../img/gallery/thumb/27_toot-thumb.jpg'),
-    url('../img/gallery/thumb/26_hanna-thumb.jpg'),
-    url('../img/gallery/thumb/25_ed-thumb.jpg'),
-    url('../img/gallery/thumb/24_spidey-thumb.jpg'),
-    url('../img/gallery/thumb/23_nutty-thumb.jpg'),
-    url('../img/gallery/thumb/22_snowflake-thumb.jpg'),
-    url('../img/gallery/thumb/21_trick-thumb.jpg'),
-    url('../img/gallery/thumb/20_sheriff-thumb.jpg'),
-    url('../img/gallery/thumb/19_wolf-thumb.jpg'),
-    url('../img/gallery/thumb/18_grylls-thumb.jpg'),
-    url('../img/gallery/thumb/17_beaver-thumb.jpg'),
-    url('../img/gallery/thumb/16_selfish-thumb.jpg'),
-    url('../img/gallery/thumb/15_lazy-thumb.jpg'),
-    url('../img/gallery/thumb/14_wacky-thumb.jpg'),
-    url('../img/gallery/thumb/13_fred-thumb.jpg'),
-    url('../img/gallery/thumb/12_dila-thumb.jpg'),
-    url('../img/gallery/thumb/11_carrot-thumb.jpg'),
-    url('../img/gallery/thumb/10_forest-thumb.jpg'),
-    url('../img/gallery/thumb/09_raccoon-thumb.jpg'),
-    url('../img/gallery/thumb/08_lion-thumb.jpg'),
-    url('../img/gallery/thumb/07_genius-thumb.jpg'),
-    url('../img/gallery/thumb/06_fox-thumb.jpg'),
-    url('../img/gallery/thumb/05_frog-thumb.jpg'),
-    url('../img/gallery/thumb/04_fishing-thumb.jpg'),
-    url('../img/gallery/thumb/03_walrus-thumb.jpg'),
-    url('../img/gallery/thumb/02_radioactive-thumb.jpg'),
-    url('../img/gallery/thumb/01_duck-thumb.jpg'),
-    url('../img/gallery/thumb/empty-thumb-hover.jpg'),
+    url('./img/gallery/thumb/43_goat-thumb.jpg'),
+    url('./img/gallery/thumb/42_diamond-thumb.jpg'),
+    url('./img/gallery/thumb/41_corona-thumb.jpg'),
+    url('./img/gallery/thumb/40_grinch-thumb.jpg'),
+    url('./img/gallery/thumb/39_rabbit-thumb.jpg'),
+    url('./img/gallery/thumb/38_walk-thumb.jpg'),
+    url('./img/gallery/thumb/37_kaiju-thumb.jpg'),
+    url('./img/gallery/thumb/36_silhouette-thumb.jpg'),
+    url('./img/gallery/thumb/35_rick-thumb.jpg'),
+    url('./img/gallery/thumb/34_kodi-thumb.jpg'),
+    url('./img/gallery/thumb/33_snail-thumb.jpg'),
+    url('./img/gallery/thumb/32_screwball-thumb.jpg'),
+    url('./img/gallery/thumb/31_scientist-thumb.jpg'),
+    url('./img/gallery/thumb/30_sheep-thumb.jpg'),
+    url('./img/gallery/thumb/29_rooster-thumb.jpg'),
+    url('./img/gallery/thumb/28_kooky-thumb.jpg'),
+    url('./img/gallery/thumb/27_toot-thumb.jpg'),
+    url('./img/gallery/thumb/26_hanna-thumb.jpg'),
+    url('./img/gallery/thumb/25_ed-thumb.jpg'),
+    url('./img/gallery/thumb/24_spidey-thumb.jpg'),
+    url('./img/gallery/thumb/23_nutty-thumb.jpg'),
+    url('./img/gallery/thumb/22_snowflake-thumb.jpg'),
+    url('./img/gallery/thumb/21_trick-thumb.jpg'),
+    url('./img/gallery/thumb/20_sheriff-thumb.jpg'),
+    url('./img/gallery/thumb/19_wolf-thumb.jpg'),
+    url('./img/gallery/thumb/18_grylls-thumb.jpg'),
+    url('./img/gallery/thumb/17_beaver-thumb.jpg'),
+    url('./img/gallery/thumb/16_selfish-thumb.jpg'),
+    url('./img/gallery/thumb/15_lazy-thumb.jpg'),
+    url('./img/gallery/thumb/14_wacky-thumb.jpg'),
+    url('./img/gallery/thumb/13_fred-thumb.jpg'),
+    url('./img/gallery/thumb/12_dila-thumb.jpg'),
+    url('./img/gallery/thumb/11_carrot-thumb.jpg'),
+    url('./img/gallery/thumb/10_forest-thumb.jpg'),
+    url('./img/gallery/thumb/09_raccoon-thumb.jpg'),
+    url('./img/gallery/thumb/08_lion-thumb.jpg'),
+    url('./img/gallery/thumb/07_genius-thumb.jpg'),
+    url('./img/gallery/thumb/06_fox-thumb.jpg'),
+    url('./img/gallery/thumb/05_frog-thumb.jpg'),
+    url('./img/gallery/thumb/04_fishing-thumb.jpg'),
+    url('./img/gallery/thumb/03_walrus-thumb.jpg'),
+    url('./img/gallery/thumb/02_radioactive-thumb.jpg'),
+    url('./img/gallery/thumb/01_duck-thumb.jpg'),
+    url('./img/gallery/thumb/empty-thumb-hover.jpg'),
 
     /* Modal Images */
-    url('../img/gallery/full/43_goat-full.jpg'),
-    url('../img/gallery/full/42_diamond-full.jpg'),
-    url('../img/gallery/full/41_corona-full.jpg'),
-    url('../img/gallery/full/40_grinch-full.jpg'),
-    url('../img/gallery/full/39_rabbit-full.jpg'),
-    url('../img/gallery/full/38_walk-full.gif'),
-    url('../img/gallery/full/37_kaiju-full.jpg'),
-    url('../img/gallery/full/36_silhouette-full.jpg'),
-    url('../img/gallery/full/35_rick-full.jpg'),
-    url('../img/gallery/full/34_kodi-full.jpg'),
-    url('../img/gallery/full/33_snail-full.jpg'),
-    url('../img/gallery/full/32_screwball-full.jpg'),
-    url('../img/gallery/full/31_scientist-full.jpg'),
-    url('../img/gallery/full/30_sheep-full.jpg'),
-    url('../img/gallery/full/29_rooster-full.jpg'),
-    url('../img/gallery/full/28_kooky-full.jpg'),
-    url('../img/gallery/full/27_toot-full.jpg'),
-    url('../img/gallery/full/26_hanna-full.jpg'),
-    url('../img/gallery/full/25_ed-full.jpg'),
-    url('../img/gallery/full/24_spidey-full.jpg'),
-    url('../img/gallery/full/23_nutty-full.jpg'),
-    url('../img/gallery/full/22_snowflake-full.jpg'),
-    url('../img/gallery/full/21_trick-full.jpg'),
-    url('../img/gallery/full/20_sheriff-full.jpg'),
-    url('../img/gallery/full/19_wolf-full.jpg'),
-    url('../img/gallery/full/18_grylls-full.jpg'),
-    url('../img/gallery/full/17_beaver-full.jpg'),
-    url('../img/gallery/full/16_selfish-full.jpg'),
-    url('../img/gallery/full/15_lazy-full.jpg'),
-    url('../img/gallery/full/14_wacky-full.jpg'),
-    url('../img/gallery/full/13_fred-full.jpg'),
-    url('../img/gallery/full/12_dila-full.jpg'),
-    url('../img/gallery/full/11_carrot-full.jpg'),
-    url('../img/gallery/full/10_forest-full.jpg'),
-    url('../img/gallery/full/09_raccoon-full.jpg'),
-    url('../img/gallery/full/08_lion-full.jpg'),
-    url('../img/gallery/full/07_genius-full.jpg'),
-    url('../img/gallery/full/06_fox-full.jpg'),
-    url('../img/gallery/full/05_frog-full.jpg'),
-    url('../img/gallery/full/04_fishing-full.jpg'),
-    url('../img/gallery/full/03_walrus-full.jpg'),
-    url('../img/gallery/full/02_radioactive-full.jpg'),
-    url('../img/gallery/full/01_duck-full.jpg');
+    url('./img/gallery/full/43_goat-full.jpg'),
+    url('./img/gallery/full/42_diamond-full.jpg'),
+    url('./img/gallery/full/41_corona-full.jpg'),
+    url('./img/gallery/full/40_grinch-full.jpg'),
+    url('./img/gallery/full/39_rabbit-full.jpg'),
+    url('./img/gallery/full/38_walk-full.gif'),
+    url('./img/gallery/full/37_kaiju-full.jpg'),
+    url('./img/gallery/full/36_silhouette-full.jpg'),
+    url('./img/gallery/full/35_rick-full.jpg'),
+    url('./img/gallery/full/34_kodi-full.jpg'),
+    url('./img/gallery/full/33_snail-full.jpg'),
+    url('./img/gallery/full/32_screwball-full.jpg'),
+    url('./img/gallery/full/31_scientist-full.jpg'),
+    url('./img/gallery/full/30_sheep-full.jpg'),
+    url('./img/gallery/full/29_rooster-full.jpg'),
+    url('./img/gallery/full/28_kooky-full.jpg'),
+    url('./img/gallery/full/27_toot-full.jpg'),
+    url('./img/gallery/full/26_hanna-full.jpg'),
+    url('./img/gallery/full/25_ed-full.jpg'),
+    url('./img/gallery/full/24_spidey-full.jpg'),
+    url('./img/gallery/full/23_nutty-full.jpg'),
+    url('./img/gallery/full/22_snowflake-full.jpg'),
+    url('./img/gallery/full/21_trick-full.jpg'),
+    url('./img/gallery/full/20_sheriff-full.jpg'),
+    url('./img/gallery/full/19_wolf-full.jpg'),
+    url('./img/gallery/full/18_grylls-full.jpg'),
+    url('./img/gallery/full/17_beaver-full.jpg'),
+    url('./img/gallery/full/16_selfish-full.jpg'),
+    url('./img/gallery/full/15_lazy-full.jpg'),
+    url('./img/gallery/full/14_wacky-full.jpg'),
+    url('./img/gallery/full/13_fred-full.jpg'),
+    url('./img/gallery/full/12_dila-full.jpg'),
+    url('./img/gallery/full/11_carrot-full.jpg'),
+    url('./img/gallery/full/10_forest-full.jpg'),
+    url('./img/gallery/full/09_raccoon-full.jpg'),
+    url('./img/gallery/full/08_lion-full.jpg'),
+    url('./img/gallery/full/07_genius-full.jpg'),
+    url('./img/gallery/full/06_fox-full.jpg'),
+    url('./img/gallery/full/05_frog-full.jpg'),
+    url('./img/gallery/full/04_fishing-full.jpg'),
+    url('./img/gallery/full/03_walrus-full.jpg'),
+    url('./img/gallery/full/02_radioactive-full.jpg'),
+    url('./img/gallery/full/01_duck-full.jpg');
 }

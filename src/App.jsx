@@ -1,10 +1,13 @@
-// import "./App.css";
+import "./App.css";
 import Layout from "./components/Layout.jsx";
 import Home from "./components/pages/Home.jsx";
 import About from "./components/pages/About.jsx";
 import Gallery from "./components/pages/Gallery.jsx";
 import Contact from "./components/pages/Contact.jsx";
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
+import { useState, useEffect } from "react";
+
+const defaultState = { loading: false }
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,7 +21,14 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  return <RouterProvider router={router} />
+  const [loading, setLoading] = useState(defaultState.loading);
+  useEffect(() => { setLoading(true) }, []);
+
+  return(
+    <>
+      { loading && <RouterProvider router={router} /> }
+    </>   
+  );
 }
 
 export default App;
