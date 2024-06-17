@@ -22,11 +22,13 @@ const router = createBrowserRouter(
 
 function App() {
   const [loading, setLoading] = useState(defaultState.loading);
-  useEffect(() => { setLoading(true) }, []);
+  useEffect(() => { setLoading(false) }, []);
 
   return(
     <>
-      { loading && <RouterProvider router={router} /> }
+      <div style={{ visibility: loading ? "hidden" : "loading" }}>
+        <RouterProvider router={router} />
+      </div>
     </>   
   );
 }
