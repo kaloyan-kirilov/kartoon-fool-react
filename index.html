@@ -15,14 +15,9 @@
     <link rel="preload" as="image" href="src/img/deviantart.svg">
     <link rel="preload" as="image" href="src/img/twitter.svg">
     <title>Kartoon Fool</title>
-    <script>
-      document.addEventListener("DOMContentLoaded", (e) => {
-        document.getElementById("main-container").style.display = "flex";
-      });
-    </script>
   </head>
   <body>
-    <div id="main-container" style="display: none;"></div>
-    <script type="module" src="src/main.jsx"></script>
+    <div id="main-container"></div>
+    <script type="module" src="src/main.jsx" defer></script>
   </body>
 </html>
