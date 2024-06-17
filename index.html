@@ -17,13 +17,13 @@
     <link rel="preload" as="image" href="src/img/twitter.svg">
     <title>Kartoon Fool</title>
   </head>
-  <body style="visibility: hidden;">
+  <body>
+    <div id="main-container" style="visibility: hidden;"></div>
+    <script type="module" src="src/main.jsx"></script>
     <script>
       document.addEventListener("DOMContentLoaded", (e) => {
-        document.body.style.visibility = "visible";
+        document.getElementById("main-container").style.visibility = "visible";
       });
     </script>
-    <div id="main-container"></div>
-    <script type="module" src="src/main.jsx"></script>
   </body>
 </html>
