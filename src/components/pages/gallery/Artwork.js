@@ -1,224 +1,218 @@
-// const thumb_url = "url('../src/img/gallery/thumb/";
-// const image_url = "url('../src/img/gallery/full/";
-
-const thumb_url = "url('/kartoon-fool-react/assets/";
-const image_url = "url('/kartoon-fool-react/assets/";
-
 const gallery = {
     image_01: {
         title: "Evil Duck",
-        thumb: thumb_url + "01_duck-thumb.jpg",
-        full: image_url + "01_duck-full.jpg"
+        thumb: "01_duck-thumb.jpg",
+        full: "01_duck-full.jpg"
     },
     image_02: {
         title: "Radioactive Cat",
-        thumb: thumb_url + "02_radioactive-thumb.jpg",
-        full: image_url + "02_radioactive-full.jpg"
+        thumb: "02_radioactive-thumb.jpg",
+        full: "02_radioactive-full.jpg"
     },
     image_03: {
         title: "Sailor Walrus",
-        thumb: thumb_url + "03_walrus-thumb.jpg",
-        full: image_url + "03_walrus-full.jpg"
+        thumb: "03_walrus-thumb.jpg",
+        full: "03_walrus-full.jpg"
     },
     image_04: {
         title: "Fishing",
-        thumb: thumb_url + "04_fishing-thumb.jpg",
-        full: image_url + "04_fishing-full.jpg"
+        thumb: "04_fishing-thumb.jpg",
+        full: "04_fishing-full.jpg"
     },
     image_05: {
         title: "Bodybuilder Frog",
-        thumb: thumb_url + "05_frog-thumb.jpg",
-        full: image_url + "05_frog-full.jpg"
+        thumb: "05_frog-thumb.jpg",
+        full: "05_frog-full.jpg"
     },
     image_06: {
         title: "The Fox",
-        thumb: thumb_url + "06_fox-thumb.jpg",
-        full: image_url + "06_fox-full.jpg"
+        thumb: "06_fox-thumb.jpg",
+        full: "06_fox-full.jpg"
     },
     image_07: {
         title: "Ze Great Genius",
-        thumb: thumb_url + "07_genius-thumb.jpg",
-        full: image_url + "07_genius-full.jpg"
+        thumb: "07_genius-thumb.jpg",
+        full: "07_genius-full.jpg"
     },
     image_08: {
         title: "Bulgarian Lion",
-        thumb: thumb_url + "08_lion-thumb.jpg",
-        full: image_url + "08_lion-full.jpg"
+        thumb: "08_lion-thumb.jpg",
+        full: "08_lion-full.jpg"
     },
     image_09: {
         title: "Raccoon Toons",
-        thumb: thumb_url + "09_raccoon-thumb.jpg",
-        full: image_url + "09_raccoon-full.jpg"
+        thumb: "09_raccoon-thumb.jpg",
+        full: "09_raccoon-full.jpg"
     },
     image_10: {
         title: "Forest BG",
-        thumb: thumb_url + "10_forest-thumb.jpg",
-        full: image_url + "10_forest-full.jpg"
+        thumb: "10_forest-thumb.jpg",
+        full: "10_forest-full.jpg"
     },
     image_11: {
         title: "Bunny Carrot",
-        thumb: thumb_url + "11_carrot-thumb.jpg",
-        full: image_url + "11_carrot-full.jpg"
+        thumb: "11_carrot-thumb.jpg",
+        full: "11_carrot-full.jpg"
     },
     image_12: {
         title: "Hungry Croc",
-        thumb: thumb_url + "12_dila-thumb.jpg",
-        full: image_url + "12_dila-full.jpg"
+        thumb: "12_dila-thumb.jpg",
+        full: "12_dila-full.jpg"
     },
     image_13: {
         title: "Fred Flintstone",
-        thumb: thumb_url + "13_fred-thumb.jpg",
-        full: image_url + "13_fred-full.jpg"
+        thumb: "13_fred-thumb.jpg",
+        full: "13_fred-full.jpg"
     },
     image_14: {
         title: "Wacky Dog",
-        thumb: thumb_url + "14_wacky-thumb.jpg",
-        full: image_url + "14_wacky-full.jpg"
+        thumb: "14_wacky-thumb.jpg",
+        full: "14_wacky-full.jpg"
     },
     image_15: {
         title: "Lazy Ass",
-        thumb: thumb_url + "15_lazy-thumb.jpg",
-        full: image_url + "15_lazy-full.jpg"
+        thumb: "15_lazy-thumb.jpg",
+        full: "15_lazy-full.jpg"
     },
     image_16: {
         title: "Sel-Fish Cat",
-        thumb: thumb_url + "16_selfish-thumb.jpg",
-        full: image_url + "16_selfish-full.jpg"
+        thumb: "16_selfish-thumb.jpg",
+        full: "16_selfish-full.jpg"
     },
     image_17: {
         title: "Beaver",
-        thumb: thumb_url + "17_beaver-thumb.jpg",
-        full: image_url + "17_beaver-full.jpg"
+        thumb: "17_beaver-thumb.jpg",
+        full: "17_beaver-full.jpg"
     },
     image_18: {
         title: "Bear Grills",
-        thumb: thumb_url + "18_grylls-thumb.jpg",
-        full: image_url + "18_grylls-full.jpg"
+        thumb: "18_grylls-thumb.jpg",
+        full: "18_grylls-full.jpg"
     },
     image_19: {
         title: "Big Bad Wolf",
-        thumb: thumb_url + "19_wolf-thumb.jpg",
-        full: image_url + "19_wolf-full.jpg"
+        thumb: "19_wolf-thumb.jpg",
+        full: "19_wolf-full.jpg"
     },
     image_20: {
         title: "Stick Em Up!",
-        thumb: thumb_url + "20_sheriff-thumb.jpg",
-        full: image_url + "20_sheriff-full.jpg"
+        thumb: "20_sheriff-thumb.jpg",
+        full: "20_sheriff-full.jpg"
     },
     image_21: {
         title: "Trick or Treat",
-        thumb: thumb_url + "21_trick-thumb.jpg",
-        full: image_url + "21_trick-full.jpg"
+        thumb: "21_trick-thumb.jpg",
+        full: "21_trick-full.jpg"
     },
     image_22: {
         title: "Snowflake",
-        thumb: thumb_url + "22_snowflake-thumb.jpg",
-        full: image_url + "22_snowflake-full.jpg"
+        thumb: "22_snowflake-thumb.jpg",
+        full: "22_snowflake-full.jpg"
     },
     image_23: {
         title: "Nutty Squirrel",
-        thumb: thumb_url + "23_nutty-thumb.jpg",
-        full: image_url + "23_nutty-full.jpg"
+        thumb: "23_nutty-thumb.jpg",
+        full: "23_nutty-full.jpg"
     },
     image_24: {
         title: "Spidey",
-        thumb: thumb_url + "24_spidey-thumb.jpg",
-        full: image_url + "24_spidey-full.jpg"
+        thumb: "24_spidey-thumb.jpg",
+        full: "24_spidey-full.jpg"
     },
     image_25: {
         title: "Ed",
-        thumb: thumb_url + "25_ed-thumb.jpg",
-        full: image_url + "25_ed-full.jpg"
+        thumb: "25_ed-thumb.jpg",
+        full: "25_ed-full.jpg"
     },
     image_26: {
         title: "Hanna-Barbera",
-        thumb: thumb_url + "26_hanna-thumb.jpg",
-        full: image_url + "26_hanna-full.jpg"
+        thumb: "26_hanna-thumb.jpg",
+        full: "26_hanna-full.jpg"
     },
     image_27: {
         title: "TooT-Too",
-        thumb: thumb_url + "27_toot-thumb.jpg",
-        full: image_url + "27_toot-full.jpg"
+        thumb: "27_toot-thumb.jpg",
+        full: "27_toot-full.jpg"
     },
     image_28: {
         title: "Kooky Bird",
-        thumb: thumb_url + "28_kooky-thumb.jpg",
-        full: image_url + "28_kooky-full.jpg"
+        thumb: "28_kooky-thumb.jpg",
+        full: "28_kooky-full.jpg"
     },
     image_29: {
         title: "Rooster Pop",
-        thumb: thumb_url + "29_rooster-thumb.jpg",
-        full: image_url + "29_rooster-full.jpg"
+        thumb: "29_rooster-thumb.jpg",
+        full: "29_rooster-full.jpg"
     },
     image_30: {
         title: "Sheep Happens",
-        thumb: thumb_url + "30_sheep-thumb.jpg",
-        full: image_url + "30_sheep-full.jpg"
+        thumb: "30_sheep-thumb.jpg",
+        full: "30_sheep-full.jpg"
     },
     image_31: {
         title: "Mad Scientist",
-        thumb: thumb_url + "31_scientist-thumb.jpg",
-        full: image_url + "31_scientist-full.jpg"
+        thumb: "31_scientist-thumb.jpg",
+        full: "31_scientist-full.jpg"
     },
     image_32: {
         title: "Screwball",
-        thumb: thumb_url + "32_screwball-thumb.jpg",
-        full: image_url + "32_screwball-full.jpg"
+        thumb: "32_screwball-thumb.jpg",
+        full: "32_screwball-full.jpg"
     },
     image_33: {
         title: "Snail Mail",
-        thumb: thumb_url + "33_snail-thumb.jpg",
-        full: image_url + "33_snail-full.jpg"
+        thumb: "33_snail-thumb.jpg",
+        full: "33_snail-full.jpg"
     },
     image_34: {
         title: "Otterly Awesome",
-        thumb: thumb_url + "34_kodi-thumb.jpg",
-        full: image_url + "34_kodi-full.jpg"
+        thumb: "34_kodi-thumb.jpg",
+        full: "34_kodi-full.jpg"
     },
     image_35: {
         title: "Rick & Morty",
-        thumb: thumb_url + "35_rick-thumb.jpg",
-        full: image_url + "35_rick-full.jpg"
+        thumb: "35_rick-thumb.jpg",
+        full: "35_rick-full.jpg"
     },
     image_36: {
         title: "Silhouette",
-        thumb: thumb_url + "36_silhouette-thumb.jpg",
-        full: image_url + "36_silhouette-full.jpg"
+        thumb: "36_silhouette-thumb.jpg",
+        full: "36_silhouette-full.jpg"
     },
     image_37: {
         title: "Kaiju",
-        thumb: thumb_url + "37_kaiju-thumb.jpg",
-        full: image_url + "37_kaiju-full.jpg"
+        thumb: "37_kaiju-thumb.jpg",
+        full: "37_kaiju-full.jpg"
     },
     image_38: {
         title: "Walk Cycle", 
-        thumb: thumb_url + "38_walk-thumb.jpg",
-        full: image_url + "38_walk-full.gif"
+        thumb: "38_walk-thumb.jpg",
+        full: "38_walk-full.gif"
     },
     image_39: {
         title: "Rabbit",
-        thumb: thumb_url + "39_rabbit-thumb.jpg",
-        full: image_url + "39_rabbit-full.jpg"
+        thumb: "39_rabbit-thumb.jpg",
+        full: "39_rabbit-full.jpg"
     },
     image_40: {
         title: "The Grinch",
-        thumb: thumb_url + "40_grinch-thumb.jpg",
-        full: image_url + "40_grinch-full.jpg"
+        thumb: "40_grinch-thumb.jpg",
+        full: "40_grinch-full.jpg"
     },
     image_41: {
         title: "Corona Bat",
-        thumb: thumb_url + "41_corona-thumb.jpg",
-        full: image_url + "41_corona-full.jpg"
+        thumb: "41_corona-thumb.jpg",
+        full: "41_corona-full.jpg"
     },
     image_42: {
         title: "Diamond Girl",
-        thumb: thumb_url + "42_diamond-thumb.jpg",
-        full: image_url + "42_diamond-full.jpg"
+        thumb: "42_diamond-thumb.jpg",
+        full: "42_diamond-full.jpg"
     },
     image_43: {
         title: "Mischievous Goat",
-        thumb: thumb_url + "43_goat-thumb.jpg",
-        full: image_url + "43_goat-full.jpg"
+        thumb: "43_goat-thumb.jpg",
+        full: "43_goat-full.jpg"
     },
     // Add New Art Here!
     no_image: {
