@@ -16,12 +16,12 @@
     <link rel="preload" as="image" href="src/img/twitter.svg">
     <title>Kartoon Fool</title>
   </head>
-  <body style="visibility: hidden;">
-    <div id="main-container"></div>
+  <body>
+    <div id="main-container" style="opacity: 0;"></div>
     <script type="module" src="src/main.jsx"></script>
     <script>
       document.addEventListener("DOMContentLoaded", (event) => {
-        document.body.style.visibility = "visible";
+        document.getElementById("main-container").style.opacity = "1";
       });
     </script>
   </body>
