@@ -6,11 +6,15 @@ function Contact() {
     const [text, setText] = useState("");
     const [alert, setAlert] = useState(false);
 
+    const key = import.meta.env.VITE_KEY;
+    const service = import.meta.env.VITE_SERVICE;
+    const template = import.meta.env.VITE_TEMPLATE;
+
     function sendMessage(e) {
         e.preventDefault();
   
         emailjs
-            .sendForm("@gmail", "kf_template", contact_form.current, {publicKey: "6cXQ9lb7zvJkbLZwI"})
+            .sendForm(service, template, contact_form.current, {publicKey: key})
             .then(() => {sendSuccessful()}, (error) => {sendFailed(error)});
     };
 
