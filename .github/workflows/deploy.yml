@@ -20,6 +20,13 @@ concurrency:
   group: 'pages'
   cancel-in-progress: true
 
+# Allow repo secrets
+env:
+  VITE_KEY: ${{ secrets.VITE_KEY }}
+  VITE_SERVICE: ${{ secrets.VITE_SERVICE }}
+  VITE_TEMPLATE: ${{ secrets.VITE_TEMPLATE }}
+  
+
 jobs:
   # Single deploy job since we're just deploying
   deploy:
