@@ -6,11 +6,11 @@ function Contact() {
     const [text, setText] = useState("");
     const [alert, setAlert] = useState(false);
 
-    const key = import.meta.env.BASE_URL.VITE_KEY;
-    const service = import.meta.env.BASE_URL.VITE_SERVICE;
-    const template = import.meta.env.BASE_URL.VITE_TEMPLATE;
+    const key = import.meta.env.VITE_KEY;
+    const service = import.meta.env.VITE_SERVICE;
+    const template = import.meta.env.VITE_TEMPLATE;
 
-    console.log(key, service, template)
+    console.log(import.meta.env)
 
     function sendMessage(e) {
         e.preventDefault();
