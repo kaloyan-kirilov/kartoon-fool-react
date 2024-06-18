@@ -6,9 +6,9 @@ function Contact() {
     const [text, setText] = useState("");
     const [alert, setAlert] = useState(false);
 
-    const key = import.meta.env.PROD.VITE_KEY;
-    const service = import.meta.env.PROD.VITE_SERVICE;
-    const template = import.meta.env.PROD.VITE_TEMPLATE;
+    const key = import.meta.env.BASE_URL.VITE_KEY;
+    const service = import.meta.env.BASE_URL.VITE_SERVICE;
+    const template = import.meta.env.BASE_URL.VITE_TEMPLATE;
 
     console.log(key, service, template)
 
