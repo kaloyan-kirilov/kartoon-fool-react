@@ -20,11 +20,6 @@ concurrency:
   group: 'pages'
   cancel-in-progress: true
 
-env:
-  VITE_KEY: true
-  VITE_SERVICE: true
-  VITE_TEMPLATE: true
-
 jobs:
   # Single deploy job since we're just deploying
   deploy:
