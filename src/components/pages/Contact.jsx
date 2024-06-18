@@ -10,8 +10,6 @@ function Contact() {
     const service = import.meta.env.VITE_SERVICE;
     const template = import.meta.env.VITE_TEMPLATE;
 
-    console.log(key, service, template)
-
     function sendMessage(e) {
         e.preventDefault();
   
