@@ -76,8 +76,8 @@ body {
 /* --- Header --- */
 #header {
     width: 100%;
-    height: 20rem;
-    background: #ffffff url('./img/header-img.png') center/contain no-repeat;
+    height: 19rem;
+    background: white url('./img/header-img.png') center/contain no-repeat;
 }
 
 /* --- Navigation Bar --- */
@@ -640,7 +640,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     }
 
     #header {
-        height: 39vw;
+        height: 37vw;
     }
 
     #home-image {
@@ -672,7 +672,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     }
 
     #header {
-        height: 45vw;
+        height: 43vw;
     }
 
     #nav-bar {
@@ -685,8 +685,8 @@ input:focus::placeholder, textarea:focus::placeholder {
     }
 
     .radial-btn {
-        width: 7.5vw;
-        height: 7.5vw;
+        width: 7.3vw;
+        height: 7.3vw;
     }
 
     #nav-menu {
