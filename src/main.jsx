@@ -7,7 +7,3 @@ ReactDOM.createRoot(document.getElementById("kartoon-kontainer")).render(
     <App />
   </React.StrictMode>
 );
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("kartoon-kontainer").style.visibility = "visible";
-});
