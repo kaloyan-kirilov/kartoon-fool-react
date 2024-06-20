@@ -7,7 +7,9 @@ import Contact from "./components/pages/Contact.jsx";
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-const [loading, setLoading] = useState(true);
+const defaultState = {
+  loading: true
+}
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,7 +23,10 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  useEffect(() => { setLoading(false) }, []);
+  const [loading, setLoading] = useState(defaultState.loading);
+  useEffect(() => { 
+    setTimeout(() => {setLoading(false)}, 5000);
+  }, []);
 
   console.log(loading)
 
