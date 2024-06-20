@@ -7,6 +7,8 @@ import Contact from "./components/pages/Contact.jsx";
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+const [loading, setLoading] = useState(true);
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/kartoon-fool-react/" element={<Layout />}>
@@ -19,7 +21,6 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  const [loading, setLoading] = useState(true);
   useEffect(() => { setLoading(false) }, []);
 
   console.log(loading)
