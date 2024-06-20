@@ -71,6 +71,8 @@ body {
     box-shadow: var(--container-shadow);
     -moz-box-shadow: var(--container-shadow);
     -webkit-box-shadow: var(--container-shadow);
+
+    visibility: hidden;
 }
 
 /* --- Header --- */
