@@ -15,8 +15,8 @@ function Layout() {
                     <li id="contact-btn" className="nav-btn"><NavLink to="/kartoon-fool-react/contact" className={currentClass}><i className="material-icons">email</i>Contact</NavLink></li>
                 </ul>
                 <div id="social-links">
-                    <div id="deviantart" className="radial-btn"></div>
-                    <div id="twitter" className="radial-btn"></div>
+                    <a href="https://www.deviantart.com/" target="_blank"><div id="deviantart" className="radial-btn"></div></a>
+                    <a href="https://twitter.com/" target="_blank"><div id="twitter" className="radial-btn"></div></a>
                 </div>
             </nav>
             <main id="page-content">
